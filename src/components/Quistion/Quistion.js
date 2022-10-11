@@ -1,10 +1,14 @@
 import React from 'react';
 import './Quistion.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const Quistion = ({ quizQuistion, answerHandler }) => {
     const { question, options } = quizQuistion
 
     const showAnsHandler = (ansher) => {
-        alert(ansher)
+        toast(ansher)
     }
     return (
         <div>
@@ -16,6 +20,7 @@ const Quistion = ({ quizQuistion, answerHandler }) => {
             </div>
             <div>
                 <button onClick={() => showAnsHandler(quizQuistion.correctAnswer)}>answer</button>
+                <ToastContainer autoClose={500} />
             </div>
         </div>
     );
