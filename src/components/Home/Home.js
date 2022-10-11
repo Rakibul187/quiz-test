@@ -1,12 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import QuizTopics from '../QuizTopics/QuizTopics';
+import QuizTopic from '../QuizTopics/QuizTopic';
 
 const Home = () => {
     const quizes = useLoaderData().data;
     return (
         <div>
-            {quizes.map(quizTopic => <QuizTopics quizTopic={quizTopic} key={quizTopic.id}></QuizTopics>)}
+            {quizes.map(quizTopic => <QuizTopic quizTopic={quizTopic} key={quizTopic.id}></QuizTopic>)}
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const QuizTopics = ({ quizTopic }) => {
-    console.log(quizTopic)
+const QuizTopic = ({ quizTopic }) => {
     return (
         <div>
             <div>
@@ -9,10 +9,10 @@ const QuizTopics = ({ quizTopic }) => {
             </div>
             <div>
                 <h1>{quizTopic.name}</h1>
-                <button>Take Test</button>
+                <Link to={`/quiz/${quizTopic.id}`}>Take Test</Link>
             </div>
         </div>
     );
 };
 
-export default QuizTopics;
+export default QuizTopic;
