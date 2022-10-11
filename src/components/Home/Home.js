@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import QuizTopics from '../QuizTopics/QuizTopics';
 
 const Home = () => {
+    const quizes = useLoaderData().data;
     return (
         <div>
-            <h1>This is home</h1>
+            {quizes.map(quizTopic => <QuizTopics quizTopic={quizTopic} key={quizTopic.id}></QuizTopics>)}
         </div>
     );
 };
