@@ -5,6 +5,14 @@ import Quistion from '../Quistion/Quistion';
 const QuizDetails = () => {
     const quizDetails = useLoaderData().data.questions;
 
+    const answerHandler = (option, quizQuistion) => {
+        if (quizQuistion.correctAnswer === option) {
+            alert('answer correct')
+        }
+        else {
+            alert('wrong answer')
+        }
+    }
     return (
         <div>
             <h1>Quiz of {quizDetails.name}</h1>

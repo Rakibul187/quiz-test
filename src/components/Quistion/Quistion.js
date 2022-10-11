@@ -6,7 +6,6 @@ const Quistion = ({ quizQuistion, answerHandler }) => {
     const showAnsHandler = (ansher) => {
         alert(ansher)
     }
-    console.log(quizQuistion)
     return (
         <div>
             <div>
