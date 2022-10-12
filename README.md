@@ -2,11 +2,11 @@
 
 ### Live Code Link
 
-This section has moved here: [https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Rakibul187](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Rakibul187)
+ [https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Rakibul187](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-Rakibul187)
 
 ### Live Website Link
 
-This section has moved here: [https://idyllic-gumdrop-70ad88.netlify.app/](https://idyllic-gumdrop-70ad88.netlify.app/)
+ [https://idyllic-gumdrop-70ad88.netlify.app/](https://idyllic-gumdrop-70ad88.netlify.app/)
 
 
 ### `Details About Project`
