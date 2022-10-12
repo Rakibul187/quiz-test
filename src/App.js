@@ -44,7 +44,7 @@ function App() {
         }
       ]
     },
-    { path: '*', element: <h1>This Route Not Found</h1> }
+    { path: '*', element: <h1 className='flex items-center justify-center mt-12 text-5xl font-bold'>This Route Not Found 404!</h1> }
   ])
   return (
     <div >
