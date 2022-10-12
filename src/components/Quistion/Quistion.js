@@ -13,10 +13,10 @@ const Quistion = ({ quizQuistion, answerHandler }) => {
     return (
         <div>
             <div>
-                <h5>
+                <h3>
                     {question.replace(/(<([^>]+)>)/ig, '')}
-                </h5>
-                <p> {options.map(option => <button onClick={() => answerHandler(option, quizQuistion)} type='radio'>{option}</button>)}</p>
+                </h3>
+                <p> {options.map(option => <button key={option} onClick={() => answerHandler(option, quizQuistion)} type='radio'>{option}</button>)}</p>
             </div>
             <div>
                 <button onClick={() => showAnsHandler(quizQuistion.correctAnswer)}>answer</button>

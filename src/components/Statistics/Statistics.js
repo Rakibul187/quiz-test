@@ -1,11 +1,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
-import './Statistics.css'
 const Statistics = () => {
     const data = useLoaderData().data
     return (
-        <div>
+        <div className='text-center'>
             <AreaChart width={730} height={250} data={data}
                 margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                 <defs>
