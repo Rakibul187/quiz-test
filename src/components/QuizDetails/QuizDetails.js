@@ -17,8 +17,8 @@ const QuizDetails = () => {
         }
     }
     return (
-        <div>
-            <h1>Quiz of {quizDetails.name}</h1>
+        <div className='p-12'>
+            <h1 className='text-3xl font-bold ml-5 text-center'>Quiz of {quizDetails.name}</h1>
             {quizDetails.questions.map(quizQuistion => <Quistion quizQuistion={quizQuistion} answerHandler={answerHandler} key={quizQuistion.id}></Quistion>)}
             <ToastContainer autoClose={500}></ToastContainer>
         </div>

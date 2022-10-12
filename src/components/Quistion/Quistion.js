@@ -10,15 +10,20 @@ const Quistion = ({ quizQuistion, answerHandler }) => {
         toast(ansher)
     }
     return (
-        <div>
+        <div className='bg-red-25 m-5 border p-3 rounded-lg relative'>
             <div>
-                <h3>
+                <h3 className='text-lg font-semibold text-orange-800'>
                     {question.replace(/(<([^>]+)>)/ig, '')}
                 </h3>
-                <p> {options.map(option => <button key={option} onClick={() => answerHandler(option, quizQuistion)} type='radio'>{option}</button>)}</p>
+
+                <p>
+                    <p> {options.map(option => <button className='bg-red-300 m-2' key={option} onClick={() => answerHandler(option, quizQuistion)} type='checkbox'>{option}</button>)}</p>
+                </p>
+
+
             </div>
             <div>
-                <button onClick={() => showAnsHandler(quizQuistion.correctAnswer)}>answer</button>
+                <button className='absolute top-5 right-5' onClick={() => showAnsHandler(quizQuistion.correctAnswer)}>answer</button>
                 <ToastContainer autoClose={500} />
             </div>
         </div>
